@@ -27,7 +27,7 @@ const ImageSection = () => {
           </div>
           <div className="info">
             <p>: Tetiana Kobryn</p>
-            <p>: 21</p>
+            <p>: 20</p>
             <p>: Ukraine</p>
             <p>: English / Russian / Ukrainian</p>
             <p>: Lviv, Ukrain</p>
