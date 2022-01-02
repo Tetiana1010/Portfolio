@@ -16,19 +16,19 @@ const ServicesSection = () => {
         <div className="services">
           <ServiceCard 
             image={design} 
-            title={'Web Desing'} 
+            title={'Web development'} 
             paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
           />
           <div className="mid-card">
             <ServiceCard 
               image={intelligence} 
-              title={'Artificial Intelligence'} 
+              title={'Web development'} 
               paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
             />
           </div>
           <ServiceCard 
             image={gamedev} 
-            title={'Game Development'} 
+            title={'Web development'} 
             paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
           />
         </div>

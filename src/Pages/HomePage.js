@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { Fragment } from "react";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GithubIcon from '@material-ui/icons/GitHub';
-import YoutubeIcon from '@material-ui/icons/YouTube';
+import InstagramIcon from '@material-ui/icons/Instagram';
+
 import Particle from '../Components/Particle.js';
 
 const HomePage = () => {
@@ -13,21 +14,19 @@ const HomePage = () => {
         <Particle />
       </div>
       <div className="typography">
-        <h1>Hi, I'm <span>Lorem Ipsum</span></h1>
+        <h1>Hi, I'm <span>Tetiana</span></h1>
         <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Atque nihil voluptates ea dolore vel 
-        repellat? Quia tenetur non quam exercitationem. Lorem ipsum dolor sit amet.
+          A young, ambitious girl who wants to make the world mush better 
         </p>
         <div className="icons">
-          <a href="https://codepen.io/pen/" className="icon i-facebook">
+          <a href="https://www.facebook.com/profile.php?id=100057275173714" className="icon i-facebook">
             <FacebookIcon />
           </a>
           <a href="https://github.com/Tetiana1010" className="icon i-github">
             <GithubIcon />
           </a>
-          <a href="https://codepen.io/pen/" className="icon i-youtube">
-            <YoutubeIcon />
+            <a href="https://instagram.com/tettttiana?utm_medium=copy_link" className="icon i-instagram">
+              <InstagramIcon />
           </a>
         </div> 
       </div>
@@ -71,10 +70,10 @@ const HomePageStyled = styled.header`
           margin: .5rem;
         }
       }
-      .i-youtube{
+      .i-instagram{
         &:hover{
-          border: 2px solid red;
-          color: red;
+          border: 2px solid orange;
+          color: orange;
         }
       }
       .i-github{

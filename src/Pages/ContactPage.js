@@ -9,39 +9,6 @@ import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from "../Components/ContactItem.js";
 
-const getSingle = (nums) => {
-  let double = [];
-  for(let i = 0; i < nums.length; i++){
-    for(let j = i+1; j < nums.length; j++){
-      if(nums[i] === nums[j]){
-        double.push(nums[i]);
-        break;
-      };
-    };
-  };
-
-  [...double] = new Set(double);
-
-  let singles = [];
-  for(let i = 0; i < nums.length; i++){
-    let isSingle = true;
-    for(let j = 0; j < double.length; j++){
-      if(double[j] === nums[i]){
-        isSingle = false;
-      }
-    }
-    if(isSingle === true){
-      singles.push(nums[i])
-    }
-  }
-
-  return singles;
-
-};
-
-console.log(getSingle([2,1,2,3,3,3,3,4,6]));
-
-
 const ContactPage = () => {
   const phone = <PhoneIcon />
   const email = <EmailIcon />
@@ -78,9 +45,9 @@ const ContactPage = () => {
               </form>
             </div>
             <div className="right-content">
-              <ContactItem icon={phone} title="Phone" contact1={'+380631973846'} contact2={'+380631973846'}></ContactItem>
-              <ContactItem icon={email} title="Email" contact1={'t.kobrin10@gmail.com'} contact2={'t.kobrin10@gmail.com'} ></ContactItem>
-              <ContactItem icon={location} title="Address" contact1={'25 Aldrich Road, Lviv'} contact2={'25 Aldrich Road, Lviv'}></ContactItem>
+              <ContactItem icon={phone} title="Phone" contact1={'+380631973846'}></ContactItem>
+              <ContactItem icon={email} title="Email" contact1={'t.kobrin10@gmail.com'} ></ContactItem>
+              <ContactItem icon={location} title="Address" contact1={'Lviv, Ukraine'}></ContactItem>
             </div>
           </InnerLayout>
         </ContactPageStyled>

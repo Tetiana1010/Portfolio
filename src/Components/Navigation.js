@@ -7,30 +7,30 @@ function Navigation() {
   return (
     <NavigationStyled>
       <div className="avatar">
-        <img src={photo} alt=""/>
+        <img src={photo} alt="avatar"/>
       </div>
       <ul className="nav-items">
           <li className="nav-item">
-            <NavLink to="/" activeClassName="active-class">Home</NavLink>
+            <NavLink to="/" activeClassName="active-class" exact>Home</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/resume" activeClassName="active-class">Resume</NavLink>
+            <NavLink to="/resume" activeClassName="active-class" exact>Resume</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/about" activeClassName="active-class">About</NavLink>
+            <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/portfolio" activeClassName="active-class">Portfolio</NavLink>
+            <NavLink to="/portfolio" activeClassName="active-class" exact>Portfolio</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/blogs" activeClassName="active-class">Blogs</NavLink>
+            <NavLink to="/blogs" activeClassName="active-class" exact>Blogs</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/contact" activeClassName="active-class">Contact</NavLink>
+            <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
           </li>
       </ul>
       <footer className="footer">
-        <p>@2021 <b>My Portfolio Website</b></p>
+        <p>@2022 My Portfolio Website</p>
       </footer>
     </NavigationStyled>
   );
@@ -102,11 +102,13 @@ const NavigationStyled = styled.nav`
   };
   
   footer {
+    position: absolute;
+    bottom: .5rem;
     border-top: 1px solid var(--border-color);
     width: 100%;
     p {
       padding: 1.3rem 0;
-      font-size: 1.1rem;
+      font-size: 1rem;
       display: block;
       text-align: center;
     }

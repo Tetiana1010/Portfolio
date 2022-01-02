@@ -5,7 +5,7 @@ import Navigation from './Navigation.js';
 function Sidebar({navToggle}){
   return (
     <SidebarStyled className={`${navToggle ? 'nav-toggle' : ''}`}>
-      <Navigation></Navigation>
+      <Navigation />
     </SidebarStyled >
   )
 }

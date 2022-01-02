@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import styled from 'styled-components';
 import photo from '../images/photo.jpg';
-import PrimaryButton from './PrimaryButton.js'
+import PrimaryButton from './PrimaryButton.js';
+
 
 const ImageSection = () => {
   return <Fragment>
@@ -10,11 +11,9 @@ const ImageSection = () => {
         <img src={photo} alt=""/>
       </div>
       <div className="right-content">
-        <h4>I am <span>Tetiana</span> </h4>
+        <h4>I'm <span>Tetiana</span> </h4>
         <p className="paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Atque nihil voluptates ea dolore vel repellat? 
-          Quia tenetur non quam exercitationem.
+          I'm still a student but I have a lot of energy and time to learn and create something new
         </p>
         <div className="about-info">
           <div className="info-title">
@@ -29,8 +28,8 @@ const ImageSection = () => {
             <p>: Tetiana Kobryn</p>
             <p>: 20</p>
             <p>: Ukraine</p>
-            <p>: English / Russian / Ukrainian</p>
-            <p>: Lviv, Ukrain</p>
+            <p>: En / Uk / Ru</p>
+            <p>: Lviv, Ukraine</p>
             <p>: Freelance</p>
           </div>
         </div>

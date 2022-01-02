@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from "react";
-import styled from "styled-components";
 import Title from "../Components/Title";
 import { InnerLayout, MainLayout } from "../styled/Layouts";
 import portfolios from '../data/portfolios.js';
@@ -22,7 +21,6 @@ const PortfolioPage = () => {
   };
 
   return <Fragment>
-    <PortfolioPageStyled>
       <MainLayout>
         <Title title="Portfolios" span="Portfolios"></Title>
         <InnerLayout>
@@ -30,11 +28,7 @@ const PortfolioPage = () => {
           <Menu menuItem={menuItem}></Menu> 
         </InnerLayout>
       </MainLayout>
-    </PortfolioPageStyled>
   </Fragment>
 };
-
-const PortfolioPageStyled = styled.div`
-`;
 
 export default PortfolioPage;

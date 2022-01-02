@@ -3,7 +3,7 @@ import blog1 from '../images/blogs/blog1.svg';
 import blog2 from '../images/blogs/blog2.svg';
 import blog3 from '../images/blogs/blog3.svg';
 import blog4 from '../images/blogs/blog4.svg';
-import blog5 from '../images/blogs/blog5.svg';
+// import blog5 from '../images/blogs/blog5.svg';
 
 const blogs = [
   {
@@ -12,7 +12,7 @@ const blogs = [
     date: '15',
     month: 'November',
     image: blog1,
-    link: 'https://developer.mozilla.org/ru/docs/Web/CSS/height',
+    link: 'https://www.thinkwithgoogle.com/intl/en-cee/future-of-marketing/management-and-culture/work-from-home-tips/?gclid=Cj0KCQiAlMCOBhCZARIsANLid6Yog7MsZPOoTCI3XKuUqWqXp0AcbH8jtgf2WlqjwS7aM46KgaaGbdUaAlKfEALw_wcB&gclsrc=aw.ds',
   },
   {
     id: 2,
@@ -20,32 +20,32 @@ const blogs = [
     date: '15',
     month: 'November',
     image: blog2,
-    link: 'https://developer.mozilla.org/ru/docs/Web/CSS/height',
+    link: 'https://www.freecodecamp.org/news/how-to-choose-a-programming-language-and-escape-tutorial-purgatory/',
   },
   {
     id: 3,
-    title: 'How to use SEO efficiently',
+    title: 'Best frameworks for Web dev in 2022',
     date: '15',
     month: 'November',
     image: blog3,
-    link: 'https://developer.mozilla.org/ru/docs/Web/CSS/height',
+    link: 'https://www.techmagic.co/blog/the-8-best-frameworks-for-web-development-in-2020/',
   },
   {
     id: 4,
-    title: 'How to use SEO efficiently',
+    title: 'How to solve coding problems',
     date: '15',
     month: 'November',
     image: blog4,
-    link: 'https://developer.mozilla.org/ru/docs/Web/CSS/height',
+    link: 'https://www.freecodecamp.org/news/how-to-solve-coding-problems/',
   },
-  {
-    id: 5,
-    title: 'How to use SEO efficiently',
-    date: '15',
-    month: 'November',
-    image: blog5,
-    link: 'https://developer.mozilla.org/ru/docs/Web/CSS/height',
-  }
+  // {
+  //   id: 5,
+  //   title: 'How to use SEO efficiently',
+  //   date: '15',
+  //   month: 'November',
+  //   image: blog5,
+  //   link: 'https://developer.mozilla.org/ru/docs/Web/CSS/height',
+  // }
 ];
 
 export default blogs;
