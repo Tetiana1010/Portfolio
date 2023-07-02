@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 
-const PrimaryButton = ({title}) => {
+const PrimaryButton = ({title, link}) => {
   return <Fragment>
-    <PrimaButtonStyled>
+    <PrimaButtonStyled href={link}>
       {title}
     </PrimaButtonStyled>
   </Fragment>

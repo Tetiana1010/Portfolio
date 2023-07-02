@@ -12,7 +12,7 @@ const AboutPage = () => {
       <AboutStyles>
         <Title title={'About me'} span={'About me'}/>
         <ImageSection />
-        <ServicesSection />
+        {/* <ServicesSection /> */}
         {/* <ReviewsSection /> */}
       </AboutStyles>
     </MainLayout>

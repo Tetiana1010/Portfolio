@@ -8,32 +8,29 @@ const ImageSection = () => {
   return <Fragment>
     <ImageSectionStyled>
       <div className="left-content">
-        <img src={photo} alt=""/>
+        <img src={photo} alt="My Portfolio Photo"/>
       </div>
       <div className="right-content">
         <h4>I'm <span>Tetiana</span> </h4>
         <p className="paragraph">
-          I'm still a student but I have a lot of energy and time to learn and create something new
+          As a front-end developer with a passion for clean and engaging web design, I bring expertise in HTML, CSS (leveraging Tailwind CSS), and
+          JavaScript, along with proficiency in Figma for end to end design and implementation. Within my industry experience, I have worked on many features in several full-stack code bases, using Node.js for seamless server-side interactions as well as Vue.js and React for UI, making me a versatile asset ready to elevate any project.
         </p>
         <div className="about-info">
           <div className="info-title">
-            <p>Full Name</p>
-            <p>Age</p>
-            <p>Nationality</p>
-            <p>Languages</p>
-            <p>Location</p>
-            <p>Service</p>
+            <p>Full Name:</p>
+            <p>Age:</p>
+            <p>Languages:</p>
+            <p>Location:</p>
           </div>
           <div className="info">
-            <p>: Tetiana Kobryn</p>
-            <p>: 20</p>
-            <p>: Ukraine</p>
-            <p>: En / Uk / Ru</p>
-            <p>: Lviv, Ukraine</p>
-            <p>: Freelance</p>
+            <p>Tetiana Kobryn</p>
+            <p>21</p>
+            <p>En / Uk / Ru</p>
+            <p>Lviv, Ukraine (+remote, relocate)</p>
           </div>
         </div>
-        <PrimaryButton title={'Download Cv'}></PrimaryButton>
+        <PrimaryButton title={'Download Cv'} link="./data/Tetiana_Kobryn_Front-end_Developer.pdf"></PrimaryButton>
       </div>
     </ImageSectionStyled>
   </Fragment>

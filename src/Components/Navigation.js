@@ -30,7 +30,7 @@ function Navigation() {
           </li>
       </ul>
       <footer className="footer">
-        <p>@2022 My Portfolio Website</p>
+        <p>@2023 My Portfolio Website</p>
       </footer>
     </NavigationStyled>
   );
