@@ -8,7 +8,7 @@ const ImageSection = () => {
   return <Fragment>
     <ImageSectionStyled>
       <div className="left-content">
-        <img src={photo} alt="My Portfolio Photo"/>
+        <img src={photo} alt="My Portfolio" />
       </div>
       <div className="right-content">
         <h4>I'm <span>Tetiana</span> </h4>

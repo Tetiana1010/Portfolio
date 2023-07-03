@@ -1,19 +1,18 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
-import { Fragment } from "react";
-import FacebookIcon from '@material-ui/icons/Facebook';
 import GithubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import LinkedinIcon from '@material-ui/icons/LinkedIn.js'
+import LinkedinIcon from '@material-ui/icons/LinkedIn.js';
+// import FacebookIcon from '@material-ui/icons/Facebook';
 
-import Particle from '../Components/Particle.js';
+// import Particle from '../Components/Particle.js';
 
 const HomePage = () => {
   return <Fragment>
     <HomePageStyled>
-      <div className="particle-con">
+      {/* <div className="particle-con">
         <Particle />
-      </div>
+      </div> */}
       <div className="typography">
         <h1>Hi, I'm <span>Tetiana</span></h1>
         <p>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ImageSection from '../Components/ImageSection.js';
 import Title from '../Components/Title.js';
 import { MainLayout } from '../styled/Layouts.js';
-import ServicesSection from '../Components/ServicesSection.js';
+// import ServicesSection from '../Components/ServicesSection.js';
 //import ReviewsSection from  '../Components/ReviewsSections.js';
 
 const AboutPage = () => {

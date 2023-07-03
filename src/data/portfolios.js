@@ -1,8 +1,8 @@
-import css1 from '../images/portImages/cv_css.png';
-import css2 from '../images/portImages/ms.png';
-import react1 from '../images/portImages/react_styled.png';
-import img2 from '../images/portImages/maya-4.jpg';
-import img3 from '../images/portImages/maya-3.jpg';
+// import css1 from '../images/portImages/cv_css.png';
+// import css2 from '../images/portImages/ms.png';
+// import react1 from '../images/portImages/react_styled.png';
+// import img2 from '../images/portImages/maya-4.jpg';
+// import img3 from '../images/portImages/maya-3.jpg';
 
 const portfolios = [
     // {
