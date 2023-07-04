@@ -18,7 +18,7 @@ const ContactPage = () => {
         <Title title="Contact" span="Contact"></Title>
         <ContactPageStyled>
           <InnerLayout className={'contact-secton'}>
-            <div className="left-content">
+            {/* <div className="left-content">
               <div className="contact-title">
                 <h4>Get in touch</h4>
               </div>
@@ -43,7 +43,7 @@ const ContactPage = () => {
                   <PrimaryButton title="Send email"/>
                 </div>
               </form>
-            </div>
+            </div> */}
             <div className="right-content">
               <ContactItem icon={phone} title="Phone" contact1={'+380631973846'}></ContactItem>
               <ContactItem icon={email} title="Email" contact1={'t.kobrin10@gmail.com'} ></ContactItem>
