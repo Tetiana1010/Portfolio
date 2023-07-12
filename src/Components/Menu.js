@@ -20,7 +20,7 @@ import OpenInBrowserIcon from '@material-ui/icons/OpenInBrowser';
 //                     </a>
 //                   </li>
 //                   <li>
-//                     <a href={item.link2}>
+//                     <a href={item.github}>
 //                       <Pinterest></Pinterest>
 //                     </a>
 //                   </li>
@@ -167,7 +167,7 @@ const Menu = ({menuItem}) => {
                     </a>
                   </li>
                   <li>
-                    <a href={item.link2}>
+                    <a href={item.github}>
                       <OpenInBrowserIcon></OpenInBrowserIcon>
                     </a>
                   </li>
