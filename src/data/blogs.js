@@ -3,7 +3,6 @@ import blog1 from '../images/blogs/blog1.svg';
 import blog2 from '../images/blogs/blog2.svg';
 import blog3 from '../images/blogs/blog3.svg';
 import blog4 from '../images/blogs/blog4.svg';
-// import blog5 from '../images/blogs/blog5.svg';
 
 const blogs = [
   {
@@ -38,14 +37,6 @@ const blogs = [
     image: blog4,
     link: 'https://www.freecodecamp.org/news/how-to-solve-coding-problems/',
   },
-  // {
-  //   id: 5,
-  //   title: 'How to use SEO efficiently',
-  //   date: '15',
-  //   month: 'November',
-  //   image: blog5,
-  //   link: 'https://developer.mozilla.org/ru/docs/Web/CSS/height',
-  // }
 ];
 
 export default blogs;

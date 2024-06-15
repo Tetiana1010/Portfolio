@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import photo from '../images/photo.jpg';
 
 function Navigation() {
   return (
     <NavigationStyled>
       <div className="avatar">
-        <img src={photo} alt="avatar"/>
+        <img src='./assets/images/Tetiana_Kobryn.jpeg' alt="Avatar"/>
       </div>
       <ul className="nav-items">
           <li className="nav-item">
@@ -53,6 +52,7 @@ const NavigationStyled = styled.nav`
     padding: 1rem 0;
     img {
       width: 70%;
+      aspect-ratio: 1;
       border-radius: 50%;
       border: 8px solid var(--border-color);
     } 

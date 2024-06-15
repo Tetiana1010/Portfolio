@@ -1,29 +1,34 @@
-import React, { Fragment } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 import styled from 'styled-components';
 
-const ResumeItem = ({year, title, text, subTitle}) => {
-  return <Fragment>
+const ResumeItem = ({ title, startDate, endDate, institution, location, description }) => {
+  return (
     <ResumeItemStyled>
       <div className="left-content">
-        <p>{year}</p>
+        <p>{startDate} - <br /> {endDate}</p>
       </div>
       <div className="right-content">
-        <h5>{title}</h5>
-        <h6>{subTitle}</h6>
-        <p>{text}</p>
+        <h5>{title}</h5> 
+        <h6>{institution} | {location}</h6>
+        <p dangerouslySetInnerHTML={{ __html: description }} />
       </div>
     </ResumeItemStyled>
-  </Fragment>
+  );
+};
+
+ResumeItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  startDate: PropTypes.string.isRequired,
+  endDate: PropTypes.string.isRequired,
+  institution: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 const ResumeItemStyled = styled.div`
   display: flex;
-  @media screen and (max-width: 421px){
-    p, h5, h6 {
-      font-size: 80%;
-    }
-  }
-  &:not(:last-child){
+  &:not(:last-child) {
     padding-bottom: 3rem;
   }
   .left-content {
@@ -66,9 +71,10 @@ const ResumeItemStyled = styled.div`
       padding-bottom: .6rem;
       font-size: 1.5rem;
     }
-
+    p {
+      font-size: 1.2rem;
+    }
   }
-
 `;
 
 export default ResumeItem;

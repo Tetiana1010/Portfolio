@@ -1,27 +1,45 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
+import PropTypes from 'prop-types';
 
-const ContactItem = ({icon, title, contact1, contact2}) => {
-  return <Fragment>
-    <ContactItemSyuled>
+const ContactItem = ({ icon, title, type, contact1, contact2 }) => {
+  return (
+    <ContactItemStyled>
       <div className="left-content">
         {icon}
       </div>
       <div className="right-content">
-          <h6>{title}</h6>
-          <p>{contact1}</p>
-          <p>{contact2}</p>
+        <h6>{title}</h6>
+        {type ? (
+          <>
+            <a href={`${type}:${contact1}`}>{contact1}</a>
+            <a href={`${type}:${contact2}`}>{contact2}</a>
+          </>
+        ) : (
+          <>
+            <address>{contact1}</address>
+            <address>{contact2}</address>
+          </>
+        )}
       </div>
-    </ContactItemSyuled>
-  </Fragment>
+    </ContactItemStyled>
+  );
 };
 
-const ContactItemSyuled = styled.div`
+ContactItem.propTypes = {
+  icon: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+  type: PropTypes.string,
+  contact1: PropTypes.string.isRequired,
+  contact2: PropTypes.string.isRequired
+};
+
+const ContactItemStyled = styled.div`
   padding: 1.1rem 2rem;
   background-color: var(--background-dark-grey);
   display: flex;
   align-items: center;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 2.5rem;
   }
   .left-content {
@@ -35,19 +53,26 @@ const ContactItemSyuled = styled.div`
       font-size: 2.3rem;
     }
   }
-  .right-content{
+  .right-content {
     h6 {
       color: var(--white-color);
       font-size: 1.2rem;
-      padding-bottom: .6rem;
-
+      padding-bottom: 0.6rem;
     }
-    p {
-      padding: .1rem 0;
+    a,
+    address {
+      color: var(--font-light-color);
+      display: block;
+      font-size: 1rem;
+      margin-top: 0.3rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      &:hover {
+        color: var(--primary-color);
+      }
     }
   }
 `;
-
 
 export default ContactItem;
 

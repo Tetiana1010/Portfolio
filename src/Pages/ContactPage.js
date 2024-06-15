@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import PrimaryButton from "../Components/PrimaryButton";
 import Title from "../Components/Title.js";
 import { InnerLayout, MainLayout } from "../styled/Layouts.js";
 
@@ -18,36 +17,10 @@ const ContactPage = () => {
         <Title title="Contact" span="Contact"></Title>
         <ContactPageStyled>
           <InnerLayout className={'contact-secton'}>
-            {/* <div className="left-content">
-              <div className="contact-title">
-                <h4>Get in touch</h4>
-              </div>
-              <form className="form">
-                <div className="form-fied">
-                  <label htmlFor="name">Enter your name</label>
-                  <input id="name" type="text"></input>
-                </div>
-                <div className="form-fied">
-                  <label htmlFor="email">Enter your email</label>
-                  <input id="email" type="email"></input>
-                </div>
-                <div className="form-fied">
-                  <label htmlFor="subject">Enter your subject</label>
-                  <input id="subject" type="subject"></input>
-                </div>
-                <div className="form-fied">
-                  <label htmlFor="text-area">Enter your message</label>
-                  <textarea name="textarea" id="text" cols="30" rows="10"></textarea>
-                </div>
-                <div className="form-field f-button">
-                  <PrimaryButton title="Send email"/>
-                </div>
-              </form>
-            </div> */}
             <div className="right-content">
-              <ContactItem icon={phone} title="Phone" contact1={'+380631973846'}></ContactItem>
-              <ContactItem icon={email} title="Email" contact1={'t.kobrin10@gmail.com'} ></ContactItem>
-              <ContactItem icon={location} title="Address" contact1={'Lviv, Ukraine'}></ContactItem>
+              <ContactItem icon={phone} title="Phone" contact1={'+380631973846'} type="tel"/>
+              <ContactItem icon={email} title="Email" contact1={'t.kobrin10@gmail.com'} type="mailto"/>
+              <ContactItem icon={location} title="Address" contact1={'Lviv, Ukraine'} />
             </div>
           </InnerLayout>
         </ContactPageStyled>

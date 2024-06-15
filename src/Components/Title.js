@@ -1,12 +1,20 @@
-import React, { Fragment } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const Title = ({title, span}) => {
-  return <Fragment>
+const Title = ({ title, span }) => {
+  return (
     <TitleStyled>
-      <h2>{title} <b><span>{span}</span></b></h2>
+      <h2>
+        {title} <b><span>{span}</span></b>
+      </h2>
     </TitleStyled>
-  </Fragment>
+  );
+};
+
+Title.propTypes = {
+  title: PropTypes.string.isRequired,
+  span: PropTypes.string.isRequired,
 };
 
 const TitleStyled = styled.div`
@@ -18,30 +26,31 @@ const TitleStyled = styled.div`
     text-transform: uppercase;
     position: relative;
     padding-bottom: 0.7rem;
-    @media screen and (max-width: 496px){
+    
+    @media screen and (max-width: 496px) {
       font-size: 2.8rem;
-    };
-    @media screen and (max-width: 370px){
+    }
+    @media screen and (max-width: 370px) {
       font-size: 2rem;
-    };
+    }
 
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       bottom: 0;
       width: 7.4rem;
-      height: .33rem;
+      height: 0.33rem;
       background-color: var(--background-light-color-2);
       border-radius: 15px;
-      opacity: 1px;
+      opacity: 1;
       left: 0;
     }
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       bottom: 0;
       width: 3.5rem;
-      height: .33rem;
+      height: 0.33rem;
       background-color: var(--primary-color);
       border-radius: 15px;
       left: 0;
@@ -54,13 +63,14 @@ const TitleStyled = styled.div`
       left: 0;
       top: 30%;
       z-index: -1;
-      @media screen and (max-width: 620px){
+      
+      @media screen and (max-width: 620px) {
         font-size: 4rem;
       }
-      @media screen and (max-width: 496px){
+      @media screen and (max-width: 496px) {
         font-size: 3rem;
       }
-      @media screen and (max-width: 370px){
+      @media screen and (max-width: 370px) {
         font-size: 2rem;
       }
     }
