@@ -2,15 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { InnerLayout } from '../styled/Layouts';
-import ProgressBar from '../Components/ProgressBar';
+import ProgressBar from './ProgressBar';
 import Title from './Title';
 
 const skillsData = [
   { title: 'HTML', width: '98%', text: '98%' },
   { title: 'CSS3', width: '98%', text: '98%' },
+  { title: 'Tailwind', width: '90%', text: '90%' },
   { title: 'JavaScript', width: '90%', text: '90%' },
   { title: 'React', width: '90%', text: '90%' },
-  { title: 'Vue', width: '80%', text: '80%' }
+  { title: 'Vue', width: '80%', text: '80%' },
+  { title: 'Astro', width: '70%', text: '70%' }
 ];
 
 const Skills = () => {

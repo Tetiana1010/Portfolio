@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { Route, Switch } from "react-router-dom"; // Updated import for Switch and Route from react-router-dom
+import { Route, Switch } from "react-router-dom";
 import { Fragment } from "react";
 
-import HomePage from '../Pages/HomePage';
-import AboutPage from '../Pages/AboutPage';
-import BlogsPage from '../Pages/BlogsPage';
-import PortfolioPage from '../Pages/PortfoliosPage';
-import ResumePage from '../Pages/ResumePage';
-import ContactPage from '../Pages/ContactPage';
+import HomePage from '../pages/HomePage';
+import AboutPage from '../pages/AboutPage';
+import BlogsPage from '../pages/BlogsPage';
+import PortfolioPage from '../pages/PortfoliosPage';
+import ResumePage from '../pages/ResumePage';
+import ContactPage from '../pages/ContactPage';
 
 const MainContent = () => {
   return (

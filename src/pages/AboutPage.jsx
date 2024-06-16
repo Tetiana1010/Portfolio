@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import ImageSection from '../Components/ImageSection.js';
-import Title from '../Components/Title.js';
 import { MainLayout } from '../styled/Layouts.js';
+import ImageSection from '../components/ImageSection';
+import Title from '../components/Title';
 
 const AboutPage = () => {
   return <Fragment>

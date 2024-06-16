@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import Title from "../Components/Title.js";
 import blogs from "../data/blogs.js";
 import { MainLayout, InnerLayout } from "../styled/Layouts.js";
+import Title from "../components/Title";
 
 const BlogsPage = () => {
   return <Fragment>

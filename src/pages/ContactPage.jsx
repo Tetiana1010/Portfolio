@@ -1,12 +1,11 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import Title from "../Components/Title.js";
-import { InnerLayout, MainLayout } from "../styled/Layouts.js";
-
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-import ContactItem from "../Components/ContactItem.js";
+import { InnerLayout, MainLayout } from "../styled/Layouts.js";
+import ContactItem from "../components/ContactItem";
+import Title from "../components/Title";
 
 const ContactPage = () => {
   const phone = <PhoneIcon />

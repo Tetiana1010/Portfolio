@@ -15,9 +15,9 @@ const ReviewItemStyled = styled.div`
   background-color: var(--background-dark-grey);
   position: relative;
   width: 50%;
-  /* &:not(:first-child){
+  &:not(:first-child){
     margin-left: 2rem;
-  } */
+  }
   &::after {
     content: "";
     position: absolute;

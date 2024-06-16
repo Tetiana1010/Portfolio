@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Title from "./Title";
 import { InnerLayout } from "../styled/Layouts";
+import Title from "./Title";
 import SmallTitle from './SmallTitle';
-import resumeData from '../data/resume'
 import ResumeItem from './ResumeItem';
+import resumeData from '../data/resume'
 
 const Resume = () => {
   return (
@@ -46,7 +46,7 @@ const ResumePageStyled = styled.section`
   }
   .resume-content {
     border-left: 2px solid var(--border-color);
-    padding-left: 2rem;
+    padding-left: 1rem;
     margin-bottom: 2rem;
   }
 `;

@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from "react";
-import Title from "../Components/Title";
-import { InnerLayout, MainLayout } from "../styled/Layouts";
+import { InnerLayout, MainLayout } from "../styled/Layouts.js";
 import portfolios from '../data/portfolios.js';
-import Menu from "../Components/Menu.js";
-import Button from '../Components/Button.js';
+import Menu from "../components/Menu.jsx";
+import Button from '../components/Button.jsx';
+import Title from "../components/Title.jsx";
 
 const allButtons = ['All', ...new Set(portfolios.map(item => item.category))];
 

@@ -32,14 +32,15 @@ const ResumeItemStyled = styled.div`
     padding-bottom: 3rem;
   }
   .left-content {
-    width: 50%;
+    flex: 0 0 20%;
     padding-left: 20px;
     position: relative;
     &::before {
       content: "";
       position: absolute;
+      /* left: -10px; */
       left: -10px;
-      top: 5px;
+      top: 12px;
       height: 15px;
       width: 15px;
       border-radius: 50%;
@@ -48,16 +49,18 @@ const ResumeItemStyled = styled.div`
     }
     p {
       display: inline-block;
+      padding-top: 8px;
     }
   }
   .right-content {
-    padding-left: 5rem;
+    flex: 1;
+    padding-left: 3rem;
     position: relative;
     &::before {
       content: "";
       position: absolute;
-      left: 0;
-      top: 15px;
+      left: -4.2%;
+      top: 22px;
       height: 2px;
       width: 3rem;
       background-color: var(--border-color);

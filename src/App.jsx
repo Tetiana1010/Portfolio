@@ -1,5 +1,5 @@
-import Sidebar from './Components/Sidebar.js'; //
-import MainContent from './Components/MainContent.js';
+import Sidebar from './components/Sidebar';
+import MainContent from './components/MainContent';
 import { Fragment, useEffect } from 'react';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import { IconButton, Switch } from "@material-ui/core";
