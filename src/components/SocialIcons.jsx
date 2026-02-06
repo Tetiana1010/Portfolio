@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import IconLink from './IconLink'
-import { GitHub, LinkedIn, Instagram } from '@mui/icons-material';
+import React from "react";
+import PropTypes from "prop-types";
+import IconLink from "./IconLink"
+import styled from "styled-components";
+import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 
 const socialIconsMap = {
   linkedin: <LinkedIn />,
@@ -19,15 +19,6 @@ const SocialIcons = ({ links }) => (
     ))}
   </IconsContainer>
 );
-
-SocialIcons.propTypes = {
-  links: PropTypes.arrayOf(
-    PropTypes.shape({
-      href: PropTypes.string.isRequired,
-      type: PropTypes.oneOf(['linkedin', 'github', 'instagram']).isRequired,
-    })
-  ).isRequired,
-};
 
 const IconsContainer = styled.div`
   display: flex;
@@ -72,5 +63,14 @@ const IconsContainer = styled.div`
     color: #0077B5;
   }
 `;
+
+SocialIcons.propTypes = {
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string.isRequired,
+      type: PropTypes.oneOf(["linkedin", "github", "instagram"]).isRequired,
+    })
+  ).isRequired,
+};
 
 export default SocialIcons;

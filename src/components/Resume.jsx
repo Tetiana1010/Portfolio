@@ -1,8 +1,8 @@
 import React from "react";
 import Title from "./Title";
-import SmallTitle from './SmallTitle';
-import ResumeItem from './ResumeItem';
-import resumeData from '../data/resume'
+import SmallTitle from "./SmallTitle";
+import ResumeItem from "./ResumeItem";
+import resumeData from "../data/resume"
 import styled from "styled-components";
 import { InnerLayout } from "../styled/Layouts";
 

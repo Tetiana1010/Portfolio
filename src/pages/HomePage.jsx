@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import SocialIcons from '../components/SocialIcons';
+import React from "react";
+import styled from "styled-components";
+import SocialIcons from "../components/SocialIcons";
 
 const socialLinks = [
-  { href: 'https://www.linkedin.com/in/tetiana-kobryn-9494451b8/', type: 'linkedin' },
-  { href: 'https://github.com/Tetiana1010', type: 'github' },
-  { href: 'https://instagram.com/tettttiana?utm_medium=copy_link', type: 'instagram' },
+  { href: "https://www.linkedin.com/in/tetiana-kobryn-9494451b8/", type: "linkedin" },
+  { href: "https://github.com/Tetiana1010", type: "github" },
+  { href: "https://instagram.com/tettttiana?utm_medium=copy_link", type: "instagram" },
 ];
 
 const HomePage = () => {

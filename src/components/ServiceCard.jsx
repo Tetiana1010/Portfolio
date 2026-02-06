@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ServiceCard = ({image, title, paragraph}) => {
+const ServiceCard = ({ image, title, paragraph }) => {
   return (
     <ServiceCardStyled>
       <div className="container">

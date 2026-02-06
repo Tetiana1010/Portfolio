@@ -12,7 +12,7 @@ const SmallTitle = ({ icon, title }) => {
 };
 
 SmallTitle.propTypes = {
-  icon: PropTypes.node.isRequired, // Assuming icon is a React node (could be an SVG or other JSX)
+  icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
 };
 

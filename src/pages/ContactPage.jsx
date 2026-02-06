@@ -1,19 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { InnerLayout, MainLayout } from "../styled/Layouts.js";
-import ContactItem from "../components/ContactItem";
 import Title from "../components/Title";
+import ContactItem from "../components/ContactItem";
+import { Phone, Email, LocationOn } from "@mui/icons-material";
+import { InnerLayout, MainLayout } from "../styled/Layouts.js";
 
 const ContactPage = () => {
-  const phone = <PhoneIcon />
-  const email = <EmailIcon />
-  const location = <LocationOnIcon />
+  const phone = <Phone />
+  const email = <Email />
+  const location = <LocationOn />
+  
   return (
       <MainLayout>
-        <Title title="Contact" span="Contact"></Title>
+        <Title title="Contact" span="Contact" />
         <ContactPageStyled>
           <InnerLayout className="contact-secton">
             <div className="right-content">

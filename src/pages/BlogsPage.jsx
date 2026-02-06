@@ -1,8 +1,8 @@
 import React from "react";
-import styled from "styled-components";
 import blogs from "../data/blogs.js";
-import { MainLayout, InnerLayout } from "../styled/Layouts.js";
 import Title from "../components/Title";
+import styled from "styled-components";
+import { MainLayout, InnerLayout } from "../styled/Layouts.js";
 
 const BlogsPage = () => {
   return (

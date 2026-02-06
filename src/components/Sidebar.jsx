@@ -1,11 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Navigation from './Navigation';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Navigation from "./Navigation";
 
 function Sidebar({ navToggle }) {
   return (
-    <SidebarStyled className={`${navToggle ? 'nav-toggle' : ''}`}>
+    <SidebarStyled className={`${navToggle ? "nav-toggle" : ""}`}>
       <Navigation />
     </SidebarStyled>
   );

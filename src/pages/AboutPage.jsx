@@ -1,24 +1,15 @@
 import React from "react";
-import styled from "styled-components";
-import { MainLayout } from '../styled/Layouts.js';
-import ImageSection from '../components/ImageSection';
-import Title from '../components/Title';
+import Title from "../components/Title";
+import ImageSection from "../components/ImageSection";
+import { MainLayout } from "../styled/Layouts.js";
 
 const AboutPage = () => {
   return (
     <MainLayout>
-      <AboutStyles>
-        <Title title="About me" span="About me" />
-        <ImageSection />
-      </AboutStyles>
+      <Title title="About me" span="About me" />
+      <ImageSection />
     </MainLayout>
   )
 };
-
-const AboutStyles = styled.section`
-  @media screen and (max-width: 1000px){
-    
-  }
-`;
 
 export default AboutPage;

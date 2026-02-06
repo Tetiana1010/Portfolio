@@ -1,7 +1,7 @@
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 import GitHub from "@mui/icons-material/GitHub";
-import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
+import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
 
 const Menu = ({ menuItem }) => {
   return <MenuStyled>

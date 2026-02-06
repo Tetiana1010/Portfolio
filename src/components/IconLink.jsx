@@ -1,7 +1,12 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const IconLink = ({ href, children, className }) => (
-  <a href={href} className={`icon ${className}`} target="_blank" rel="noopener noreferrer">
+  <a
+    href={href}
+    className={`icon ${className}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     {children}
   </a>
 );

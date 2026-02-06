@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { Route, Switch } from "react-router-dom";
 
-import HomePage from '../pages/HomePage';
-import AboutPage from '../pages/AboutPage';
-import BlogsPage from '../pages/BlogsPage';
-import PortfolioPage from '../pages/PortfoliosPage';
-import ResumePage from '../pages/ResumePage';
-import ContactPage from '../pages/ContactPage';
+import HomePage from "../pages/HomePage";
+import AboutPage from "../pages/AboutPage";
+import BlogsPage from "../pages/BlogsPage";
+import PortfolioPage from "../pages/PortfoliosPage";
+import ResumePage from "../pages/ResumePage";
+import ContactPage from "../pages/ContactPage";
 
 const MainContent = () => {
   return (

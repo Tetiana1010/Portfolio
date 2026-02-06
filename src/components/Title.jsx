@@ -12,11 +12,6 @@ const Title = ({ title, span }) => {
   );
 };
 
-Title.propTypes = {
-  title: PropTypes.string.isRequired,
-  span: PropTypes.string.isRequired,
-};
-
 const TitleStyled = styled.div`
   position: relative;
   h2 {
@@ -76,5 +71,10 @@ const TitleStyled = styled.div`
     }
   }
 `;
+
+Title.propTypes = {
+  title: PropTypes.string.isRequired,
+  span: PropTypes.string.isRequired,
+};
 
 export default Title;

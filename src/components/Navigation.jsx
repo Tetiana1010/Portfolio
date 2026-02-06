@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 function Navigation() {
   return (
     <NavigationStyled>
       <div className="avatar">
-        <img src='./assets/images/Tetiana_Kobryn.jpeg' alt="Avatar"/>
+        <img src="./assets/images/Tetiana_Kobryn.jpeg" alt="Avatar"/>
       </div>
       <ul className="nav-items">
           <li className="nav-item">
@@ -74,7 +74,7 @@ const NavigationStyled = styled.nav`
         z-index: 10;
         text-transform: uppercase;
         transition: all .4 ease-in-out;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: 600;
         letter-spacing: 1px;
         &:hover {
@@ -114,7 +114,7 @@ const NavigationStyled = styled.nav`
     }
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 `;
 
 export default Navigation;

@@ -1,18 +1,18 @@
 import React, {  useState } from "react";
-import portfolios from '../data/portfolios.js';
 import Menu from "../components/Menu.jsx";
-import Button from '../components/Button.jsx';
 import Title from "../components/Title.jsx";
+import Button from "../components/Button.jsx";
+import portfolios from "../data/portfolios.js";
 import { InnerLayout, MainLayout } from "../styled/Layouts.js";
 
-const allButtons = ['All', ...new Set(portfolios.map(item => item.category))];
+const allButtons = ["All", ...new Set(portfolios.map(item => item.category))];
 
 const PortfolioPage = () => {
   const [menuItem, setMenuItems] = useState(portfolios);
   const [button] = useState(allButtons);
 
   const filter = (button) => {
-    if(button === 'All'){
+    if(button === "All"){
       setMenuItems(portfolios);
       return;
     }
