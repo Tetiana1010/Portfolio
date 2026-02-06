@@ -1,10 +1,10 @@
+import { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
 import { Fragment, useEffect } from 'react';
-import Brightness4Icon from '@material-ui/icons/Brightness4';
-import { IconButton, Switch } from "@material-ui/core";
-import MenuIcon from '@material-ui/icons/Menu';
-import { useState } from 'react';
+import { IconButton, Switch } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
 
 
 function App() {

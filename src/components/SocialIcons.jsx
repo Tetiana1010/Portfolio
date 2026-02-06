@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { GitHub as GithubIcon, Instagram as InstagramIcon, LinkedIn as LinkedinIcon } from '@material-ui/icons';
+import { GitHub as GithubIcon, LinkedIn as LinkedinIcon, Instagram as InstagramIcon } from '@mui/icons-material';
 import IconLink from './IconLink'
 
 const socialIconsMap = {

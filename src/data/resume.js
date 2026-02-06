@@ -1,6 +1,6 @@
-import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
-import SchoolIcon from '@material-ui/icons/School';
-import CastForEducationIcon from '@material-ui/icons/CastForEducation';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import SchoolIcon from '@mui/icons-material/School';
+import CastForEducationIcon from '@mui/icons-material/CastForEducation';
 
 const resumeData = [
   {

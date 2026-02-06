@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import styled from 'styled-components';
-import GitHub from "@material-ui/icons/GitHub";
-import OpenInBrowserIcon from '@material-ui/icons/OpenInBrowser';
+import GitHub from "@mui/icons-material/GitHub";
+import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 
 const Menu = ({menuItem}) => {
   return <Fragment>
