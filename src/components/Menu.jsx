@@ -1,11 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from 'styled-components';
 import GitHub from "@mui/icons-material/GitHub";
 import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 
-const Menu = ({menuItem}) => {
-  return <Fragment>
-    <MenuStyled>
+const Menu = ({ menuItem }) => {
+  return <MenuStyled>
       {menuItem.map((item) => {
         return (
           <div className="grid-item" key={item.id}>
@@ -34,7 +33,6 @@ const Menu = ({menuItem}) => {
         )
       })}
     </MenuStyled>
-  </Fragment>
 };
 
 const MenuStyled = styled.div`

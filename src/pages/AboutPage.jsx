@@ -1,18 +1,18 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import { MainLayout } from '../styled/Layouts.js';
 import ImageSection from '../components/ImageSection';
 import Title from '../components/Title';
 
 const AboutPage = () => {
-  return <Fragment>
+  return (
     <MainLayout>
       <AboutStyles>
-        <Title title={'About me'} span={'About me'}/>
+        <Title title="About me" span="About me" />
         <ImageSection />
       </AboutStyles>
     </MainLayout>
-  </Fragment>
+  )
 };
 
 const AboutStyles = styled.section`

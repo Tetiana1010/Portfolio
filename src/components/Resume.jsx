@@ -1,15 +1,15 @@
 import React from "react";
-import styled from "styled-components";
-import { InnerLayout } from "../styled/Layouts";
 import Title from "./Title";
 import SmallTitle from './SmallTitle';
 import ResumeItem from './ResumeItem';
 import resumeData from '../data/resume'
+import styled from "styled-components";
+import { InnerLayout } from "../styled/Layouts";
 
 const Resume = () => {
   return (
     <ResumePageStyled>
-      <Title title={'Resume'} span={'Resume'} />
+      <Title title="Resume" span="Resume" />
       <InnerLayout>
         {resumeData.map((section, index) => (
           <div key={index}>

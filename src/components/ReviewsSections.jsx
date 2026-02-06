@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import {InnerLayout} from '../styled/Layouts.js';
 import Title from "./Title.jsx/index.js";
-import ReviewItem from './ReviewItem.jsx/index.js'
+import ReviewItem from "./ReviewItem.jsx/index.js"
+import { InnerLayout } from "../styled/Layouts.js";
 
 const ReviewsSection = () => {
   return (
     <ReviewsStyled>
-      <Title title={'Reviews'} span={'Reviews'}/>
+      <Title title="Reviews" span="Reviews" />
       <InnerLayout>
         <div className="rewiews">
           <ReviewItem 

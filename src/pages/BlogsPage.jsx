@@ -1,18 +1,18 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import blogs from "../data/blogs.js";
 import { MainLayout, InnerLayout } from "../styled/Layouts.js";
 import Title from "../components/Title";
 
 const BlogsPage = () => {
-  return <Fragment>
+  return (
     <MainLayout>
       <BlogsStyled>
-        <Title title={'Blogs'} span={'Blogs'}/>
-        <InnerLayout className={'blog'}>
+        <Title title="Blogs" span="Blogs" />
+        <InnerLayout className="blog" >
           {
             blogs.map(blog => {
-              return <div key={blog.id} className={'blog-item'}>
+              return <div key={blog.id} className="blog-item" >
                 <div className="image">
                   <img src={blog.image} alt="" />
                 </div>
@@ -27,7 +27,7 @@ const BlogsPage = () => {
         </InnerLayout>
       </BlogsStyled>
     </MainLayout>
-  </Fragment>
+  )
 };
 
 const BlogsStyled = styled.div`

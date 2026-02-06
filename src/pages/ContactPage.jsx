@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
-import PhoneIcon from '@mui/icons-material/Phone';
-import EmailIcon from '@mui/icons-material/Email';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { InnerLayout, MainLayout } from "../styled/Layouts.js";
 import ContactItem from "../components/ContactItem";
 import Title from "../components/Title";
@@ -11,20 +11,20 @@ const ContactPage = () => {
   const phone = <PhoneIcon />
   const email = <EmailIcon />
   const location = <LocationOnIcon />
-  return <Fragment>
+  return (
       <MainLayout>
         <Title title="Contact" span="Contact"></Title>
         <ContactPageStyled>
-          <InnerLayout className={'contact-secton'}>
+          <InnerLayout className="contact-secton">
             <div className="right-content">
-              <ContactItem icon={phone} title="Phone" contact1={'+380631973846'} type="tel"/>
-              <ContactItem icon={email} title="Email" contact1={'t.kobrin10@gmail.com'} type="mailto"/>
-              <ContactItem icon={location} title="Address" contact1={'Lviv, Ukraine'} />
+              <ContactItem icon={phone} title="Phone" contact1="+380631973846" type="tel"/>
+              <ContactItem icon={email} title="Email" contact1="t.kobrin10@gmail.com" type="mailto"/>
+              <ContactItem icon={location} title="Address" contact1="Lviv, Ukraine" />
             </div>
           </InnerLayout>
         </ContactPageStyled>
       </MainLayout>
-  </Fragment>
+  )
 };
 
 const ContactPageStyled = styled.section`

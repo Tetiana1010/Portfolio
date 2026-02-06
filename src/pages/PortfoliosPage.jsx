@@ -1,9 +1,9 @@
-import React, { Fragment, useState } from "react";
-import { InnerLayout, MainLayout } from "../styled/Layouts.js";
+import React, {  useState } from "react";
 import portfolios from '../data/portfolios.js';
 import Menu from "../components/Menu.jsx";
 import Button from '../components/Button.jsx';
 import Title from "../components/Title.jsx";
+import { InnerLayout, MainLayout } from "../styled/Layouts.js";
 
 const allButtons = ['All', ...new Set(portfolios.map(item => item.category))];
 
@@ -20,15 +20,15 @@ const PortfolioPage = () => {
     setMenuItems(filteredData);
   };
 
-  return <Fragment>
-      <MainLayout>
-        <Title title="Portfolios" span="Portfolios"></Title>
-        <InnerLayout>
-          <Button filter={filter} button={button}/>
-          <Menu menuItem={menuItem}></Menu> 
-        </InnerLayout>
-      </MainLayout>
-  </Fragment>
+  return (
+    <MainLayout>
+      <Title title="Portfolios" span="Portfolios"></Title>
+      <InnerLayout>
+        <Button filter={filter} button={button}/>
+        <Menu menuItem={menuItem}></Menu> 
+      </InnerLayout>
+    </MainLayout>
+  )
 };
 
 export default PortfolioPage;

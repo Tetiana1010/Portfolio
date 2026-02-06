@@ -1,18 +1,15 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from 'styled-components';
 
 const Button = ({filter, button}) => {
-  return <Fragment>
-    <ButtonsStyled>
-      {
-        button.map((but, i) => {
-          return <ButtonStyled key={i} onClick={() => filter(but)}>
-            {but}
-          </ButtonStyled>
-        })
-      }
-    </ButtonsStyled>
-  </Fragment>
+  return <ButtonsStyled>
+    {button.map((but, i) => {
+        return <ButtonStyled key={i} onClick={() => filter(but)}>
+          {but}
+        </ButtonStyled>
+      })
+    }
+  </ButtonsStyled>
 };
 
 const ButtonStyled = styled.button`
@@ -44,4 +41,5 @@ const ButtonsStyled = styled.div`
   width: 70%;
   margin: 2.4rem auto;
 `;
+
 export default Button;

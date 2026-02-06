@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import PropTypes from 'prop-types';
+import styled from "styled-components";
 
 const ContactItem = ({ icon, title, type, contact1, contact2 }) => {
   return (
@@ -24,14 +24,6 @@ const ContactItem = ({ icon, title, type, contact1, contact2 }) => {
       </div>
     </ContactItemStyled>
   );
-};
-
-ContactItem.propTypes = {
-  icon: PropTypes.node.isRequired,
-  title: PropTypes.string.isRequired,
-  type: PropTypes.string,
-  contact1: PropTypes.string.isRequired,
-  contact2: PropTypes.string.isRequired
 };
 
 const ContactItemStyled = styled.div`
@@ -73,6 +65,14 @@ const ContactItemStyled = styled.div`
     }
   }
 `;
+
+ContactItem.propTypes = {
+  icon: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+  type: PropTypes.string,
+  contact1: PropTypes.string.isRequired,
+  contact2: PropTypes.string.isRequired
+};
 
 export default ContactItem;
 

@@ -1,18 +1,16 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const ProgressBar = ({title, width, text}) => {
-  return <Fragment>
-    <ProgressBarStyled>
-      <h6>{title}</h6>
-      <div className="progress-bar">
-        <p>{text}</p>
-        <div className="progress">
-          <span style={{width: width}}></span>
-        </div>
+  return <ProgressBarStyled>
+    <h6>{title}</h6>
+    <div className="progress-bar">
+      <p>{text}</p>
+      <div className="progress">
+        <span style={{width: width}}></span>
       </div>
-    </ProgressBarStyled>
-  </Fragment>
+    </div>
+  </ProgressBarStyled>
 };
 
 const ProgressBarStyled = styled.div`

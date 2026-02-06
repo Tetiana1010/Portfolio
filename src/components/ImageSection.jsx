@@ -1,15 +1,15 @@
 import React from "react";
-import styled from 'styled-components';
-import PrimaryButton from './PrimaryButton';
-import calculateAge from '../utils/ageCalculator';
+import styled from "styled-components";
+import PrimaryButton from "./PrimaryButton";
+import calculateAge from "../utils/ageCalculator";
 
 const ImageSection = () => {
-  const age = calculateAge('2001-10-10');
+  const age = calculateAge("2001-10-10");
 
   return (
     <ImageSectionStyled>
       <div className="left-content">
-        <img src='./assets/images/Tetiana_Kobryn.jpeg' alt="Avatar" />
+        <img src="./assets/images/Tetiana_Kobryn.jpeg" alt="Avatar" />
       </div>
       <div className="right-content">
         <h4>I'm <span>Tetiana</span></h4>
@@ -30,7 +30,7 @@ const ImageSection = () => {
             <p>Lviv, Ukraine (+remote, relocate)</p>
           </div>
         </div>
-        <PrimaryButton title={'Download CV'} link="./assets/documents/Tetiana_Kobryn_Front-end_Developer.pdf" />
+        <PrimaryButton title="Download CV" link="./assets/documents/Tetiana_Kobryn_Front-end_Developer.pdf" />
       </div>
     </ImageSectionStyled>
   );

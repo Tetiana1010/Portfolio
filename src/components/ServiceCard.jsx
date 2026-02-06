@@ -1,16 +1,16 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const ServiceCard = ({image, title, paragraph}) => {
-  return <Fragment>
+  return (
     <ServiceCardStyled>
       <div className="container">
-        <img src={image} alt=""/>
+        <img src={image} alt="Card"/>
         <h4>{title}</h4>
         <p>{paragraph}</p>
       </div>
     </ServiceCardStyled>
-  </Fragment>
+  )
 };
 
 const ServiceCardStyled = styled.div`

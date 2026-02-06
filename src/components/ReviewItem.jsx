@@ -1,12 +1,12 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const ReviewItem = ({text}) => {
-  return <Fragment>
+  return (
     <ReviewItemStyled>
       <p>{text}</p>
     </ReviewItemStyled>
-  </Fragment>
+  )
 };
 
 const ReviewItemStyled = styled.div`
